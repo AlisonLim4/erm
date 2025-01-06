@@ -1,0 +1,16 @@
+.seguros-vantagens-bg {
+  background-color: var(--cor-12);
+}
+.seguros-vantagens.container {
+  padding-top: 120px;
+}
+.seguros-vantagens ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 90px;
+  padding-bottom: 90px;
+  gap: 40px;
+}
+.seguros-perguntas-bg {
+  background: var(--cor-0);
+}

@@ -1,0 +1,240 @@
+/* #contato {
+  background: var(--cor-1);
+  background: linear-gradient(var(--cor-11) 600px, red 0px);
+} */
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+main {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 -220px white;
+}
+.contato-dados,
+.contato-formulario {
+  padding: 60px;
+  box-shadow: 0, 1px, 2px rgba(0, 0, 0, 0.1);
+}
+.contato-dados {
+  background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 20px left 20px;
+  border-radius: 5px 0 0 5px;
+  width: 460px;
+}
+.contato-dados h2 {
+  margin-bottom: 60px;
+}
+.contato-endereco {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 32px;
+}
+.contato-endereco p:first-child::before {
+  content: url(../../img/icones/local.svg);
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+}
+.contato-endereco p {
+  margin-bottom: 8px;
+}
+.contato-endereco p:nth-child(n + 2) {
+  margin-left: 28px;
+}
+.contato-emails {
+  display: grid;
+  margin-bottom: 32px;
+}
+.contato-emails a {
+  margin-bottom: 8px;
+}
+
+.contato-emails a:nth-child(1)::before {
+  content: url(../../img/icones/email.svg);
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+}
+.contato-emails a:nth-child(2) {
+  padding-bottom: 32px;
+  padding-left: 30px;
+}
+.contato-emails a:nth-child(3)::before {
+  content: url(../../img/icones/telefone.svg);
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.contato-formulario {
+  border-radius: 0 0 5px 5px;
+  width: 700px;
+  padding: 60px 60px;
+  background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat
+    bottom 20px right 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form label {
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.form div:nth-child(n + 3) {
+  grid-column: 1/-1;
+  max-width: 100%;
+}
+.form input,
+.form textarea {
+  border-radius: 4px;
+  border: 1px solid var(--cor-1);
+  height: 48px;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  padding-left: 12px;
+}
+.form textarea::placeholder {
+  padding-top: 20px;
+}
+.form textarea {
+  height: 160px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    box-shadow: none;
+  }
+  .contato {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .contato-dados {
+    background: var(--cor-12);
+  }
+  .contato-dados h2 {
+    margin-bottom: 32px;
+  }
+  .contato-formulario {
+    width: 80%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+.lojas {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 60px;
+}
+.lojas h2 {
+  display: block;
+  grid-column: 1/-1;
+}
+
+.lojas-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  border: 1px solid var(--cor-1);
+  margin-bottom: 60px;
+}
+.lojas-item img,
+h3 {
+  grid-column: 1/-1;
+}
+.lojas-item h3 {
+  margin-left: 60px;
+  position: relative;
+}
+.lojas-item h3::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+  position: absolute;
+  left: -20px;
+  top: 16px;
+}
+.lojas-dados p {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  color: var(--cor-8);
+  margin-left: 60px;
+  padding-left: 16px;
+  border-left: 1px solid var(--cor-2);
+}
+
+.lojas-dados a {
+  font: 400 rem/1.5 "Roboto", sans-serif;
+
+  margin-right: 150px;
+  padding-left: 16px;
+  margin-bottom: 8px;
+  border-left: 1px solid var(--cor-2);
+}
+.lojas-item span {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-left: 32px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+.lojas-item span::before {
+  content: url(/img/icones/horario.svg);
+  height: 20px;
+  width: 20px;
+  padding: 8px;
+}
+
+@media (max-width: 1100px) {
+  .lojas-item {
+    grid-template-columns: 1fr;
+  }
+  .lojas-dados {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .lojas-dados a {
+    margin-left: 60px;
+  }
+}

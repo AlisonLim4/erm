@@ -1,0 +1,31 @@
+main {
+  background: #fff;
+}
+.termos {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.termos h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.termos p {
+  padding-bottom: 10px;
+  text-align: left;
+  max-width: 75ch;
+}
+
+@media (max-width: 800px) {
+  .termos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .termos h2 {
+    font-size: 1.5rem;
+  }
+  .termos p {
+    font-size: 1rem;
+  }
+}
