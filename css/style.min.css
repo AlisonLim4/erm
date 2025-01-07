@@ -1,3 +1,6 @@
+html {
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -554,7 +557,7 @@ img [src$='.jpg'] {
 .bicicletas-bg {
   background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0);
 }
-.bicicletas {
+.classes {
   padding-top: 60px;
   padding-bottom: 60px;
   display: grid;
@@ -562,13 +565,13 @@ img [src$='.jpg'] {
   gap: 40px;
   background: url('../img/dec/top-right.svg') no-repeat top 40px right 20px;
 }
-.bicicletas-imagem {
+.instrumentos-imagem {
   display: grid;
 }
-.bicicletas-imagem img {
+.instrumentos-imagem img {
   grid-area: 1/1;
 }
-.bicicletas-imagem span {
+.instrumentos-imagem span {
   grid-area: 1/1;
   place-self: start end;
   margin-top: 20px;
@@ -577,20 +580,20 @@ img [src$='.jpg'] {
   padding: 8px 10px 8px 8px;
   border-radius: 4px 0 0 4px;
 }
-.bicicletas-conteudo {
+.instrumentos-conteudo {
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start;
   padding-left: 40px;
 }
-.bicicletas h2,
-.bicicletas p {
+.classes h2,
+.classes p {
   grid-column: 1/-1;
 }
-.bicicletas h2 {
+.classes h2 {
   margin-bottom: 20px;
 }
-.bicicletas h2::before {
+.classes h2::before {
   content: '';
   display: block;
   width: 12px;
@@ -598,26 +601,26 @@ img [src$='.jpg'] {
   background-color: var(--cor-p1);
   margin-bottom: 8px;
 }
-.bicicletas p {
+.classes p {
   margin-bottom: 32px;
 }
-.bicicletas-conteudo a {
+.classes-conteudo a {
   place-self: end;
 }
-.bicicletas ul {
+.classes ul {
   display: grid;
   gap: 16px;
 }
-.bicicletas li {
+.classes li {
   display: flex;
   gap: 8px;
 }
-.bicicletas-conteudo img {
+.instrumentos-conteudo img {
   height: 24px;
   width: 24px;
 }
 @media (max-width: 800px) {
-  .bicicletas {
+  .classes {
     grid-template-columns: 1fr;
     gap: 20px;
     padding-top: 40px;
@@ -628,15 +631,15 @@ img [src$='.jpg'] {
   }
 }
 @media (max-width: 600px) {
-  .bicicletas-conteudo {
+  .instrumentos-conteudo {
     grid-template-columns: 1fr;
   }
-  .bicicletas ul {
+  .classes ul {
     font-size: 1rem;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 32px;
   }
-  .bicicletas a {
+  .classes a {
     place-self: start;
   }
 }
@@ -1675,14 +1678,11 @@ main {
   margin: 0 auto;
   margin-top: 40px;
 
-  width: max-content;
+  /* width: max-content; */
 }
 .luteria_content_flex {
   display: flex;
-  /* justify-content: space-between; */
   gap: 20px;
-
-  width: 100%;
 }
 
 .luteria_content_p p {
