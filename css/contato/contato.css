@@ -16,7 +16,7 @@ main {
   box-shadow: 0, 1px, 2px rgba(0, 0, 0, 0.1);
 }
 .contato-dados {
-  background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat
+  background: var(--cor-12) url('../../img/dec/bottom-left.svg') no-repeat
     bottom 20px left 20px;
   border-radius: 5px 0 0 5px;
   width: 460px;
@@ -77,7 +77,7 @@ main {
   border-radius: 0 0 5px 5px;
   width: 700px;
   padding: 60px 60px;
-  background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat
+  background: var(--cor-0) url('../../img/dec/bottom-right.svg') no-repeat
     bottom 20px right 20px;
 }
 
@@ -88,13 +88,13 @@ main {
 }
 .form label {
   display: block;
-  font: 600 1rem/1.5 "Poppins", sans-serif;
+  font: 600 1rem/1.5 'Poppins', sans-serif;
   margin-bottom: 4px;
 }
-.form input[type="text"],
-.form input[type="email"],
+.form input[type='text'],
+.form input[type='email'],
 .form textarea {
-  font: 400 1rem/1.5 "Roboto", sans-serif;
+  font: 400 1rem/1.5 'Roboto', sans-serif;
   background: var(--cor-1);
   border: 1px solid var(--cor-2);
   padding: 12px;
@@ -102,8 +102,8 @@ main {
   width: 100%;
   box-sizing: border-box;
 }
-.form input[type="text"]:focus,
-.form input[type="email"]:focus,
+.form input[type='text']:focus,
+.form input[type='email']:focus,
 .form textarea:focus {
   outline: none;
   border-color: var(--cor-p1);
@@ -123,7 +123,7 @@ main {
 }
 .form input::placeholder,
 .form textarea::placeholder {
-  font: 400 1rem/1.5 "Roboto", sans-serif;
+  font: 400 1rem/1.5 'Roboto', sans-serif;
   padding-left: 12px;
 }
 .form textarea::placeholder {
@@ -184,7 +184,7 @@ h3 {
   position: relative;
 }
 .lojas-item h3::before {
-  content: "";
+  content: '';
   display: block;
   width: 12px;
   height: 8px;
@@ -195,7 +195,7 @@ h3 {
   top: 16px;
 }
 .lojas-dados p {
-  font: 400 1rem/1.5 "Roboto", sans-serif;
+  font: 400 1rem/1.5 'Roboto', sans-serif;
   color: var(--cor-8);
   margin-left: 60px;
   padding-left: 16px;
@@ -203,7 +203,7 @@ h3 {
 }
 
 .lojas-dados a {
-  font: 400 rem/1.5 "Roboto", sans-serif;
+  font: 400 rem/1.5 'Roboto', sans-serif;
 
   margin-right: 150px;
   padding-left: 16px;
@@ -211,7 +211,7 @@ h3 {
   border-left: 1px solid var(--cor-2);
 }
 .lojas-item span {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   margin-left: 32px;

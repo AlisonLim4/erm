@@ -199,7 +199,6 @@ img [src$='.jpg'] {
 .header-logo {
   display: flex;
   align-items: center;
-  border: 1px solid red;
 }
 .header-menu {
   display: flex;
@@ -511,11 +510,13 @@ img [src$='.jpg'] {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: auto;
+  overflow-x: scroll;
+  border: 1px solid red;
 }
-#bicicleta .quem-somos ul {
+
+/* .quem-somos ul {
   padding: 0 0 20px 0;
-}
+} */
 .quem-somos ul li {
   flex: 1;
   min-width: 280px;
@@ -551,7 +552,15 @@ img [src$='.jpg'] {
     padding-bottom: 60px;
   }
   .quem-somos ul {
+    flex-direction: column;
     gap: 20px;
+  }
+  .quem-somos ul li {
+    display: flex;
+    border: 2px solid green;
+  }
+  .card-m-v-v {
+    flex: 1;
   }
 }
 .bicicletas-bg {
@@ -1020,6 +1029,7 @@ img [src$='.jpg'] {
 }
 .contato {
   display: grid;
+  justify-content: center;
   grid-template-columns: 5fr 7fr;
 }
 main {
@@ -1033,9 +1043,10 @@ main {
 }
 .contato-dados {
   background: var(--cor-12) url('../img/dec/bottom-left.svg') no-repeat bottom
-    20px left 20px;
+    20px left 30px;
   border-radius: 5px 0 0 5px;
   width: 460px;
+  border: 2px solid green;
 }
 .contato-dados h2 {
   margin-bottom: 60px;
@@ -1086,10 +1097,11 @@ main {
 }
 .contato-formulario {
   border-radius: 0 0 5px 5px;
-  width: 700px;
+  /* width: 700px; */
   padding: 60px 60px;
   background: var(--cor-0) url('../img/dec/bottom-right.svg') no-repeat bottom
     20px right 20px;
+  border: 2px solid red;
 }
 .form {
   display: grid;
@@ -1140,6 +1152,16 @@ main {
 }
 .form textarea {
   height: 160px;
+}
+
+@media (max-width: 800px) {
+  .contato {
+    display: flex;
+    flex-direction: column;
+  }
+  .contato-dados {
+    width: auto;
+  }
 }
 @media (max-width: 600px) {
   .main {
@@ -1621,6 +1643,12 @@ main {
 .bio-content .text-container p {
   color: #d9d9d9;
 }
+
+@media (max-width: 800px) {
+  .bio-content .img-container {
+    display: none;
+  }
+}
 /* ----- regencia -----  */
 .regency-content {
   display: flex;
@@ -1660,12 +1688,28 @@ main {
 .py-30 {
   padding: 30px 0;
 }
+@media (max-width: 800px) {
+  .regency-content {
+    flex-direction: column;
+  }
+  .regency-text p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
 
 /* ------------------ cursos ---------------------*/
 
 .courses-apresentacao p {
   padding: 30px 20px;
   margin-top: 20px;
+}
+@media (max-width: 800px) {
+  .courses-apresentacao p {
+    font-size: 14px;
+    line-height: auto;
+    font-weight: 400;
+  }
 }
 
 /* ------------------ luteria ---------------------*/
@@ -1677,8 +1721,6 @@ main {
   align-items: center;
   margin: 0 auto;
   margin-top: 40px;
-
-  /* width: max-content; */
 }
 .luteria_content_flex {
   display: flex;
@@ -1693,12 +1735,25 @@ main {
 .luteria_galery {
   display: flex;
   gap: 20px;
+  overflow-x: scroll;
 }
+
 .luteria_botao {
   margin-top: 40px;
 }
-
+@media (max-width: 800px) {
+  .luteria_image_container {
+    display: none;
+  }
+  .luteria_content_p p {
+    font-size: 16px;
+  }
+}
 /* ----------- contact ------------------ */
 .contact {
+  display: flex;
+  flex-direction: column;
+
   margin-top: 80px;
+  /* border: 2px solid red; */
 }
