@@ -1,4 +1,5 @@
 html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -585,7 +586,7 @@ footer {
 .card-img-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .text-container-m-v-v {
   height: 50%;
@@ -1821,12 +1822,24 @@ main {
 .luteria_botao {
   margin-top: 40px;
 }
+@media (max-width: 1300px) {
+  .luteria_content_p p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1150px) {
+  .luteria_content_p p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1030px) {
+  .luteria_content_p p {
+    font-size: 16px;
+  }
+}
 @media (max-width: 800px) {
   .luteria_image_container {
     display: none;
-  }
-  .luteria_content_p p {
-    font-size: 16px;
   }
 }
 /* ----------- contact ------------------ */
