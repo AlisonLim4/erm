@@ -395,7 +395,7 @@
 
       <section class="contato-formulario" aria-label="Formulário">
 
-        <form class="form">
+        <form class="form" action="https://formsubmit.co/b14d3365fb3c1a17ed695146d9ffa402" method="POST">
           <div>
             <label class="font-1-m-b cor-11" for="nome">Nome</label>
             <input class="" type="text" id="nome" name="nome" placeholder="Seu nome">
@@ -412,7 +412,8 @@
             <label class="font-1-m-b cor-11" for="mensagem">Mensagem</label>
             <textarea name="mensagem" rows="5" placeholder="O que você precisa?"></textarea>
           </div>
-
+          <!-- Desativa o CAPTCHA -->
+          <input type="hidden" name="_captcha" value="false">
           <button class="botao">Enviar mensagem</button>
         </form>
       </section>
