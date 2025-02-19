@@ -1619,7 +1619,7 @@ main {
 /* ---------------BIOGRAFIA------------------  */
 .biography {
   background-color: #000000;
-  padding: 56px 0;
+  padding: 56px 0 20px 0;
 }
 
 .container-title-bio {
@@ -1702,13 +1702,15 @@ main {
 /* ----- regencia -----  */
 .regency-content {
   display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
+  /* grid-template-columns: 0.75fr 1.25fr; */
+  grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   gap: 20px;
   padding: 0 20px;
   /* max-width: 1400px; */
   background-color: #000;
   color: #d9d9d9;
+  /* border: 1px solid red; */
 }
 
 .regency-galery {
@@ -1742,8 +1744,7 @@ main {
 .regency-text {
   flex: 1;
 }
-.regency-text p {
-}
+
 .regency-title {
   padding-top: 15px;
   color: white;
